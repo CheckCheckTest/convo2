@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script>
+        var myArray = [
+            "menurut kamu, penting gak sih kamu tau tentnag mantan mantan pasangan kamu sekarang?",
+            "apa sih yang bikin mantan mantan ngaarep balikan sama kamu?",
+            "pernah ngejalanin toxic relationship? ceritain gimana kamu keluar dari hubungan tersebut",
+            "ada gak sih omongan orang yang bikin kamu sakit hati banget sampe ngerubah diri kamu",
+            "sebutin barang favorti kamu di masa kecil yang sekarang udah ilang",
+            "punya trauma yang sampe sekrang masih membekas?",
+            "sebutin film-film favorit kamu di masa kecil?",
+            "lagu favorit di masa lalu?",
+            "siapa celebrity crush kamu saat sd",
+            "pernah menyesal gara-gara berhubungan sama seseorang?",
+            "apa hal yang kamu sesali dari hubungan sebelumnya?",
+            "ceritain pengalaman dikhianati yang pernah kamu alamin",
+            "pernah gak ngalamin kejadian buruk yang membekas di fisik kamu?",
+            "pernah gak sih ngeributin hal kecil tapi jadi berantem beneran",
+            "apa sih alasan kamu mengakhiri hubungan kamu sebelumnya",
+            "ceritain 1 hari yang ga akan pernah kamu lupain sepanjang hidup",
+            "ceritain momen momen cinta monyet kamu saat sd atau smp",
+    ];
+            
+        var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+             
+    </script> 
+    
+  </head>
+  <body>
+
+
+    <div class="d-flex justify-content-center p-4">
+      <div class="card " style="width: 18rem;">
+        <a href="past.html">
+          <img src="past.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body" id="randomItem">
+          <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+        
+<script>
+    document.getElementById('randomItem').innerHTML = randomItem;
+</script>
+
+  </body>
+</html>
